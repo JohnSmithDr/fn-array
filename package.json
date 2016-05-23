@@ -1,0 +1,11 @@
+{
+  "name": "fn-array",
+  "version": "0.1.0",
+  "description": "Function array structure in ES6",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test.js"
+  },
+  "author": "johnsmith1st <johnsmith1st@live.com>",
+  "license": "MIT"
+}
