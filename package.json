@@ -1,11 +1,19 @@
 {
   "name": "fn-array",
   "version": "0.1.0",
-  "description": "Function array structure in ES6",
+  "description": "ES6 function array",
   "main": "index.js",
   "scripts": {
     "test": "mocha test.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JohnSmithDr/fn-array.git"
+  },
   "author": "johnsmith1st <johnsmith1st@live.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JohnSmithDr/fn-array/issues"
+  },
+  "homepage": "https://github.com/JohnSmithDr/fn-array#readme"
 }
