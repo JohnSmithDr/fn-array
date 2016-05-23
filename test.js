@@ -1,13 +1,13 @@
 'use strict';
 
 let assert = require('assert');
-let FunctionList = require('./index');
+let FunctionArray = require('./index');
 
-describe('FunctionList', function() {
+describe('FunctionArray', function() {
 
   it('should be ok', function() {
 
-    let fnArr = FunctionList
+    let fnArr = FunctionArray
       .create()
       .use(function foo() { return 'foo'; })
       .use(function bar() { return 'bar'; })
