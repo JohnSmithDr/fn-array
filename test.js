@@ -7,8 +7,8 @@ describe('FunctionList', function() {
 
   it('should be ok', function() {
 
-    let fnArr = new FunctionList();
-    fnArr
+    let fnArr = FunctionList
+      .create()
       .use(function foo() { return 'foo'; })
       .use(function bar() { return 'bar'; })
       .use(1);
@@ -33,7 +33,6 @@ describe('FunctionList', function() {
 
     let it = fnArr.iterator();
     while(fn = it.next().value) {
-      console.log(fn);
       if (i === 0) {
         assert.equal('foo', fn.name);
         assert.equal('foo', fn());
@@ -48,7 +47,6 @@ describe('FunctionList', function() {
     i = 0;
     it = fnArr.iterator();
     while(fn = it.next().value) {
-      console.log(fn);
       if (i === 0) {
         assert.equal('foo', fn.name);
         assert.equal('foo', fn());

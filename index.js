@@ -49,10 +49,19 @@ module.exports = class FunctionArray {
 
   /**
    * Returns new iteration through functions.
+   * @returns {object}
    */
   *iterator() {
     let i = 0;
     while (i < this._list.length) yield this._list[i++];
+  }
+  
+  /**
+   * Create new array.
+   * @returns {FunctionArray}
+   */
+  static create() {
+    return new FunctionArray();
   }
 
 };
